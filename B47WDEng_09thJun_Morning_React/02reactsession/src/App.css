@@ -1,0 +1,14 @@
+.profile-pic{
+  width:200px;
+  height: 200px;
+}
+.border{
+  border:1px solid navy;
+  width:290px;
+  margin:5px;
+}
+.App{
+  display: flex;
+  flex-wrap:wrap;
+  text-align: center;
+}

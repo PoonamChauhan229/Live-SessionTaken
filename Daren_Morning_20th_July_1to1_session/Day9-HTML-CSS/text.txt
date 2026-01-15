@@ -1,0 +1,49 @@
+Main important: VS Code.
+
+Extensions: to write our code easily
+
+HTML CSS Support-ecmel
+HTML Snippets-geyao
+Live Server-Ritwick Dey
+vscode-icons-VSCode Icons Team
+
+
+Todays Topics:
+What is HTML & Why to use?
+Basic Tags
+div vs span
+inline vs block elements
+HTML Forms
+Input elements and attributes
+CSS
+Form submit
+
+HTML=>HyperText MarkUp Language:
+    =>Tags
+    =>Write on the browser
+
+2 types:
+1-self closing<tag/>
+2-Opening and closing tags
+<tag></tag>
+
+Element=> tag+content
+
+Basic Tags:
+1.paragrapgh Tags=><p></p>
+2.heading tags
+3.div tags=>division tag
+4.span tag
+5.anchor tag
+etc......
+
+block level and inline level elements
+block-div, heading tags
+inline-span
+
+
+
+CSS-Cascading Style sheet
+
+
+

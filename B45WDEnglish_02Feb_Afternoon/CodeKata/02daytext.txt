@@ -1,0 +1,116 @@
+var arr=[true,'grapes',1,"hi how are you"]
+array=< index=0
+hi how are you=> lenght of the array=>4
+<=arr.length-1=> 3
+<arr.length->4=> stop 3
+//i => index no
+for(var i=0;i<arr.length;i++){//i<4
+    console.log(arr[i])//i=0,i=1,i=2,1=3,1=4
+}
+0 arr[i]=>arr[0]=> true
+1 arr[i]=>arr[1]=>grapes
+2 arr[i]=>arr[2]=>1
+3 arr[i]=>arr[3]=>hi how are you
+
+//for loop
+for(var i=0;i<4;i++){
+    console.log(i)
+}
+0
+1
+2
+3
+
+Method:
+
+parseInt()
+parse=>converting 
+Int=>Integer
+NaN=>Not an Number
+
+parseInt('a10')
+NaN
+parseInt('10a')
+10
+parseInt('10ajkjkjk')
+10
+parseInt('100ajkjkjk')
+100
+parseInt('40 60 80')
+40
+parseInt('    60')
+60
+parseInt('jk    60')
+NaN
+parseInt('40    60')
+40
+parseInt('    60')
+60
+
+var a='100'
+
+var b='200'
+
+a+b
+'100200'
+parseInt(a)+parseInt(b)
+100+200
+300
+
+Number()
+0
+parseInt()
+NaN
+
+Number()=>0
+1
+1.78
+0.78
+parseInt(1)=>1 Number(1)=>1
+parseInt(1.78)=>1 Number(1.78)=>1.78
+
+Number(1.78)
+1.78
+Number('1.78')
+1.78
+Number('1.78 years')
+NaN
+parseInt('1.78 years')
+1
+Number(true)
+1
+Number(false)
+0
+Number('1.56767667676767676767')
+1.5676766767676769
+
+CodeKata:
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];//empty array
+
+inp.on("line", (data) => {
+  userInput.push(data);//
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+   
+  //end-here
+});
+  
+  var userInput=["2"]
+
+userInput[0]="2"
+Integer
+parseInt(userInput[0])=>2
+
+split("")
+join("")

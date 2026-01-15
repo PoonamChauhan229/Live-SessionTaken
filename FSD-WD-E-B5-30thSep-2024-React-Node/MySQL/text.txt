@@ -1,0 +1,164 @@
+SQL:Structured Query Language
+: Some Structure 
+Tables>>> Row (Record)| Cols
+
+Database 
+>> FSDWDB5
+    >Students
+    >Task
+    >Attendance
+    >Activties
+    >Codekata Problem Solving
+
+Students
+StudentsName |FullName|Contactnum|emailAddress|VoterID|Stud_Id (Primary Key(PK))
+
+Harish       |FullName|Contactnum|emailAddress|VoterID |1
+Anjali       |FullName|Contactnum|emailAddress|null    |2
+Indurekha    |FullName|null      |emailAddress|VoterID |3
+Omprakash    |FullName|Contactnum|emailAddress|null    |4
+Neeraj       |FullName|Contactnum|null        |VoterID |5
+Dinesh       |FullName|null      |emailAddress|VoterID |6
+Firoz        |FullName|Contactnum|emailAddress|null    |7
+
+ >Task
+Stud_ID(ForiignKey(FK) |TaskCompleted1|TaskCompleted2|TaskCompleted3|Task_id(Primary Key(PK))
+2                       |Yes          |  NO          |Yes           |1
+1                       |Yes          |  NO          |No            |2
+5                       |Yes          |  YES         |No            |3
+6                       |Yes          |  NO          |No            |4
+3                       |Yes          |  NO          |YES           |5
+4                       |Yes          |  YES         |No            |6
+7                       |Yes          |  NO          |No            |7
+
+SELECT STATEMENT/QUERY >> TABLE >> COLS
+SELECT >> USING SOME CONDITION >>>WHERE CLAUSE
+in order to filter certain results from being returned, we need to use a WHERE clause in the query.
+
+    -----
+SELECT column, another_table_column, …
+FROM mytable
+    -----
+INNER JOIN another_table 
+    ON mytable.id = another_table.id
+    -----
+WHERE condition(s)
+ORDER BY column, … ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+    -----
+
+
+    _____________________
+
+
+SELECT *
+FROM movies
+INNER JOIN boxoffice 
+ON movies.id = boxoffice.movie_id
+
+Lesson6
+Q1:
+SELECT domestic_sales,international_sales
+FROM movies
+INNER JOIN boxoffice 
+ON movies.id = boxoffice.movie_id
+
+Q2:
+SELECT title,international_sales,domestic_sales
+FROM movies
+INNER JOIN boxoffice 
+ON movies.id = boxoffice.movie_id
+where international_sales>domestic_sales
+
+Q3.
+SELECT title,rating
+FROM movies
+INNER JOIN boxoffice 
+ON movies.id = boxoffice.movie_id
+order by rating desc
+
+
+EX9:
+Q1:
+SELECT title,(domestic_sales+international_sales)/1000000 as TOTAL_SALES
+FROM movies
+INNER JOIN boxoffice
+ON movies.id =boxoffice.movie_id
+
+Q2:
+SELECT title,(rating*10) AS RATING_PERCENTAGE
+FROM movies
+INNER JOIN boxoffice
+ON movies.id =boxoffice.movie_id
+
+Q3:
+SELECT title,YEAR
+FROM movies
+WHERE YEAR%2=0
+
+Ex10:
+Q1:
+SELECT Max(years_employed) FROM employees;
+
+Q2:
+SELECT role, avg(years_employed) FROM employees group by role;
+
+Q3:
+SELECT building, sum(years_employed) FROM employees group by building;
+
+Ex13:
+INSERT into movies (title,director)
+VALUES("Toy Story 4","Guvi Geek");
+
+INSERT into BoxOffice
+VALUES(15, 8.7,(340*100000),(270*100000));
+
+EX14:
+Q1:
+UPDATE MOVIES
+SET DIRECTOR="John Lasseter"
+WHERE TITLE="A Bug's Life"
+
+Q2:
+UPDATE MOVIES
+SET YEAR=1999
+WHERE TITLE="Toy Story 2"
+
+Q3:
+UPDATE MOVIES
+SET TITLE="Toy Story 3",DIRECTOR="Lee Unkrich"
+WHERE TITLE="Toy Story 8"
+
+EX15:
+Q1:
+DELETE FROM movies
+WHERE YEAR <2005;
+
+Q2:
+DELETE FROM movies
+WHERE DIRECTOR="Andrew Stanton";
+
+EX16:
+Q1:
+CREATE TABLE Database(
+    Name TEXT,
+    Version FLOAT,
+    Download_count INTEGER
+)
+EX17:
+Q1:
+ALTER TABLE movies
+ADD Aspect_ratio FLOAT
+//DEFAULT 8.5;
+
+Q2:
+ALTER TABLE movies
+ADD Language TEXT
+DEFAULT "English";
+
+EX18:
+Q1:
+DROP TABLE MOVIES;
+
+Q2:
+DROP TABLE BoxOffice;

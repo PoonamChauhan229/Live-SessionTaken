@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navHeading"id="navbarid">Home</div>
+        <div class="navHeading">About</div>
+        <div class="navHeading">Services</div>
+        <div class="navHeading">Contact Us</div>
+        <button>Submit</button>
+    </div>
+    <script>
+        var navbar=document.getElementsByClassName('navHeading')
+        console.log(navbar)
+
+        var navid=document.getElementById('navbarid')
+        console.log(navid)
+
+        var navTag=document.getElementsByTagName('div')
+        console.log(navTag)
+
+        for(i=0;i<navTag.length;i++){
+            console.log(navTag[i])
+            navTag[i].style.color="red";
+        }
+
+        var button=document.getElementsByTagName('button')
+        console.log(button)
+
+        var q1selector=document.querySelector('#navbarid')
+        console.log(q1selector)
+
+        var q2selector=document.querySelector('.navHeading')
+        console.log(q2selector)
+
+        var q3selectorall=document.querySelectorAll('.navHeading')
+        console.log(q3selectorall)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

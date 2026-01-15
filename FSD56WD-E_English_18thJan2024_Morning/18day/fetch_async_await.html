@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //async
+        //await > waiting
+        //
+
+        //async await > functions
+
+        function test(){
+            //return statement
+            return "Async Await"
+        }
+        console.log(test())
+
+        //same thing async await 
+
+        async function test2(){
+            let data= await "Async Await"// server > api call > you wait until you get all the necessary/respective data from the server
+            console.log(data)
+            // return data
+        }
+        // console.log(test2())
+        test2()
+
+        let cityName="London"
+        let apiKey=`41575f34d7cb96cd9f250e887e1f7ef3`// Akhilesh API KEY
+        // let url=`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`    
+        let url=`https://restcountries.com/v2/all`
+
+        async function getData(){
+            let data= await fetch(url)//promise => return the response           
+            let res = await data.json()//return the array 250 > convert into json > array value into it
+            console.log(res)
+        }
+        getData()
+
+
+        // Challenge1: 12:35 : 15 min end
+            // > Input box
+            // > Mention the City Name
+            // > Create a Submit Btn > 
+            // > Get the Weather data > console + Browser 
+            // > Bootstrap 
+        
+
+        //Challenge2: 10:35 : 15 min end 
+            // rest countries api
+            // open weather app api
+            // open the documenation > current weather data > find the api url > with respect to lat  & lon > o/p weather data 
+            // get the lat and lon form the rest countries > pass that to api url open weather map
+            //  ex > 100  67.8
+            // open weather map api url o/p weather data 
+            // console 
+            // async await 
+
+            let restCountriesUrl=`https://restcountries.com/v2/all`
+            
+            async function getDetails(){
+                let data=await fetch(restCountriesUrl)
+                let res= await data.json()
+                console.log(res)
+                // 1st index
+                // 0-250
+                //Math.random => index no 
+                let lat=res[0].latlng[0]
+                let lon=res[0].latlng[1]
+                console.log("Lat:",lat,"Lon:",lon)
+                let weatherDataUrl=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
+                let data1=await fetch(weatherDataUrl)
+                let res1=await data1.json()
+                console.log(res1)
+            }
+            getDetails()
+
+
+            // using promises
+
+            let extractRestCountriesData=fetch(restCountriesUrl)
+            extractRestCountriesData
+            .then(data=>data.json())
+            .then(res=>{                
+                console.log(res)
+                let lat=res[0].latlng[0]
+                let lon=res[0].latlng[1]
+                console.log("Lat:",lat,"Lon:",lon)
+                let weatherDataUrl=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`
+
+                fetch(weatherDataUrl).then(res1=>res1.json()).then(data1=>console.log(data1))
+            }
+            )
+
+        
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

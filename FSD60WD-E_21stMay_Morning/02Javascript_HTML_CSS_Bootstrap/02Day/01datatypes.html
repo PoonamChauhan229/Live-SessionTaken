@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="abc"></div>
+<body>
+    <!-- Datatypes of JS -->
+    <!-- 
+        Primitive >> Number || String || Boolean
+        Composite >> Array  || Objects
+        Trivial   >> undefined || null || empty 
+    -->
+
+    <!-- Number Dataype -->
+    <script>
+        // internal JS
+        console.log(2.3);
+        console.log(3);
+        console.log(5);
+        console.log(5.5678934567834567);
+        // check what kind of datatype 
+        //typeof
+        console.log(typeof(2.3))//number
+        console.log(typeof(5.5678934567834567));//number
+        console.log(typeof(6))
+
+        // ||String||
+        // ''/""
+        console.log("hello world");
+        console.log(typeof("hello world"));
+        console.log('2');
+        console.log(typeof('2'));
+        console.log(typeof('4567893456789.34567567'));
+
+        // ||Boolean||
+        // true /false
+        console.log(true)
+        console.log(false)
+        console.log(typeof(true))
+        console.log(typeof(false))
+        console.log(typeof('true'))
+        console.log(typeof('false'))
+     
+        //fun
+        console.log(1+1) //2  number' addition
+        console.log('100'+'100')// concatenation 100100
+        console.log('10'+10+10+'10'+10)//1010101010
+        //'10'+10 >>'1010'
+        //'1010'+10 >>'101010'
+        //'101010'+'10' >>'10101010'
+        //'10101010'+10 >>'1010101010'
+
+        console.log(10+10+10+'10'+10)//301010
+
+        // ||Composite Datatype
+        // Array  >> []
+        // Objects
+
+        //Array
+        // Array : heterogenoues datatype
+        // [] Square bracket
+        // [num,string,object,boolean]
+        // [67,89,70,"guvi","zoom",true,false]
+        // [90,89,78]
+
+        var arr=[67,89,70,"guvi","zoom",true,false,"Aakash","mute",78,90,890]
+        console.log(arr)
+        console.log(arr[3])
+        //get the last element of the array
+        console.log(arr[7])//false
+        
+        //length
+        console.log(arr.length)
+
+        //get the last element of the array
+        console.log(arr[arr.length-1])
+
+        arr[2]="Poonam"//index aws present
+        console.log(arr)
+
+        arr[12]="xyz"//index wasnt present
+        console.log(arr[12])
+        console.log(arr)
+
+        //Objects {}
+        var obj={
+            //key1 :value1
+            //key2 :value2
+            //key3  :value3
+        }
+        var stuObj={
+            name:"Aakash",
+            rolId:25,
+            course:"FSD",
+            learning:"Javacript",
+            place:["Mumbai","Chennai","Banglore"]
+        }
+        console.log(stuObj)
+        console.log(stuObj.course)
+        console.log(stuObj.rolId)
+        console.log(stuObj.learning)
+
+        stuObj.location="Chennai"
+        console.log(stuObj)
+
+        stuObj.name="Shivang"
+        console.log(stuObj)
+
+        // u have get the length of obj 
+        //Object > length
+        console.log(stuObj.length)
+
+        //Keys > Return all the Keys in an array
+        Object.keys
+        console.log(Object.keys(stuObj))
+        console.log(Object.keys(stuObj).length)
+        //Valuse > Retrun all the values in an arry
+        Object.values
+        console.log(Object.values(stuObj))
+        console.log(Object.values(stuObj).length)
+
+        let xyzarray=[
+        {
+            name:"Aakash",
+            rolId:25,
+            course:"FSD",
+            learning:"Javacript",
+            place:["Mumbai","Chennai","Banglore"]
+        },
+        {
+            name:"Preethi",
+            rolId:25,
+            course:"FSD",
+            learning:"Javacript",
+            place:["Mumbai","Chennai","Banglore"]
+        }
+        ]
+{
+    xyzarray.map((element,index)=>{
+        // <p>{element.name}</p>
+        //TaskCard {...element}
+        let abc=document.getElementById('abc')
+        let ptag=document.createElement('p')
+        ptag.innerHTML+=element.name
+        abc.append(ptag)
+    })// 2 times
+ //   console.log(newarr)
+}
+
+
+</script>
+</body>
+</html>

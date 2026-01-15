@@ -1,0 +1,85 @@
+API :
+
+HTTP METHODS:
+
+EXPRESS: HELPS US TO CREATE 
+
+CREATE an folder  > 38Day
+Terminal > cd 38Day
+
+>>Initialize 
+npm init -y
+
+>>create a entry point file >> index.js/sever.js/app.js/main.js
+>> index.js
+
+
+>> npm i nodemon
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js",     npm run start
+    "dev":"nodemon index.js"     npm run dev
+  }, 
+
+
+restcountries
+https://restcountries.com
+root route
+
+http://localhost:3000/
+root route
+
+http://localhost:3000/home
+mutliple route
+/home
+/about
+/services
+/contactus
+/products // array of object
+
+
+using httpmethods
+get method: retrive 
+
+app.get('/',(req,res)=>{
+  res.send("Hello World")
+})
+
+req: request
+res: response
+res.send("")
+
+?q=mumbai&apiid=
+?search=tool
+//Query string
+console.log(req.query)
+
+
+create an project
+db  > connection to mongodb
+model > all the models
+route > all the routing part
+index.js  > main file
+
+
+Authentication:
+Password:
+Signup Route >> POstman
+
+
+Whenever
+TO DO APP:
+
+User logged in
+>>add task edit task update task delete task  > CRUD
+user1: 10 tasks
+user2: 5 tasks
+user3: 8 tasks
+>> 23 tasks
+
+1st >> user >> [{task id}]
+2nd >> task >> {user_id}
+
+2nd option would easy :
+// update the task schema

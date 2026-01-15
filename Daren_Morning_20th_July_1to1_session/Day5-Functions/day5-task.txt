@@ -1,0 +1,6 @@
+Do the below programs in anonymous function ,IIFE, Normal and Arrow Function
+    Print even numbers in an array   
+    Sum of all numbers in an array
+    Return all the palindromes in an array
+    Return median of two sorted arrays of the same size
+    Rotate an array by k times

@@ -1,0 +1,18 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PoonamChauhan229/Git_Commands_Live-Git-hub-session_FSD56WD-E_22_01_2024.git
+git push -u origin main
+
+Next update
+git add .
+git commit -m "added few commands"
+git push -u origin main
+
+
+Add:(Setup=> 1 time activity)
+git config --global user.name “GitHub_user_name_here”
+git config --global user.email “GitHub_user_email_here”
+
+

@@ -1,0 +1,65 @@
+API:
+XML HTTP Request:
+var let const:
+Scope:
+Introduction to function:
+
+API:
+Application Programming Interface.
+
+
+https://restcountries.com/v3.1/all
+
+
+shift! hit=>enter
+
+
+script=>Javascript
+
+3Ways place JS
+body
+head
+external js file
+
+
+XML HTTP Request:to intercat with the server via API
+4 inbuilt steps:
+
+
+var let const:
+keyword for declaraing variables
+
+
+Var was intrroduced, Var is hoisted
+Hoisting:
+console.log(names)
+var names;
+
+variables can be declared after it has been used
+Pushing the variable to the top of the scope
+var is global and functional scope
+
+develper error
+
+let and const were introduced.
+
+functions:
+functions are the heart of Javascript
+1+2
+2+3
+4+5
+//DRY=>DONT REPEAT YOURSELF
+
+Whenever we want to perform any specific set of task again and again, we use functions
+
+function functionname(){
+ //block of code
+}
+functionname();
+
+
+
+
+
+
+

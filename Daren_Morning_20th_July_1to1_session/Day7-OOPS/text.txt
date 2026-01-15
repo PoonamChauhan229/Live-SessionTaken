@@ -1,0 +1,133 @@
+Classes and Objects
+
+OOPS
+
+
+Javascript inherited some featues from Javascript
+
+OOPS=>Classes and Objects
+
+
+Classes:
+
+It is the template of the Objects
+template=>blueprint
+
+
+How you classes in Javascript
+
+class Classname{
+
+}
+
+Classname=>userdefined
+
+class Car{
+///properties
+}
+
+Car=>propertries/features
+=>speed
+=>fuel
+=>color
+=>brand name
+=>launch year
+=>with AC / witout AC
+=>seaters
+=>with musicsys/ without musicsys
+=>with sunroof/ without sunroof
+=>etc.................
+
+touch and feel => that becomes the propertries of the class
+
+
+you will have create object of that class=> instance of that class
+
+with new keyword
+
+var s1=new Car()
+
+XXXXXXXX
+var s2= new Bike()
+XXXXXXXXXX
+
+s1=>is the reference variable
+
+
+Constructor:
+
+Constructor are nothing but the specail way of assigning the values to the object
+
+Assign values=> Constructor
+
+declared=> using "constructor" keyword
+
+constructor(){
+    ///properties
+}
+
+Represent:
+
+class Car{
+    constructor(){
+
+    }
+}
+
+var s1=new Car()
+
+
+Task:
+
+Class - Movie
+The class Movie is stated below.
+An instance of class Movie represents a film.
+This class has the following three properties:
+
+title, which is a String representing the title of the movie
+studio, which is a String representing the studio that made the movie
+rating, which is a String representing the rating of the movie (i.e. PG­13, R, etc)
+
+a) Write a constructor for the class Movie,
+ which takes a String representing the title of the movie, 
+ a String representing the studio, and a String representing 
+ the rating as its arguments, and sets the respective class
+ properties to these values.
+
+b) The constructor for the class Movie will 
+set the class property rating to "PG" 
+as default when no rating is provided.
+
+c) Write a method getPG,
+ which takes an array of base type Movie as its argument, 
+ and returns a new array of only those movies in the 
+ input array with a rating of "PG". 
+ You may assume the input array is full of Movie instances. 
+ The returned array need not be full.
+
+d) Write a piece of code that creates
+ an instance of the class Movie with 
+the title “Casino Royale”, 
+the studio “Eon Productions”,
+ and the rating “PG­13”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

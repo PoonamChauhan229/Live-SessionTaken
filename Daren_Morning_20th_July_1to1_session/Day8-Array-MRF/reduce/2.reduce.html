@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var student = [
+            {
+                name: "alex",
+                marks: 50
+            }, {
+                name: "daren",
+                marks: 60
+            },
+            {
+                name: "Poonam",
+                marks: 70
+            }
+        ]
+        //add all the marks.with acc and without accu(acc=10)
+
+        let totalStudentMarks = student.reduce((accumulator, element) => accumulator + element.marks, 10);
+        console.log(totalStudentMarks); //190
+
+
+        let totalStudentMarks1 = student.reduce((accumulator, element) => accumulator + element.marks, 0);
+        console.log(totalStudentMarks1)
+
+        //    how many numbers are present --count=3
+        console.log(student.length)
+
+        let totalStudentsPresent = student.reduce((accumulator, element) => accumulator + 1,0)
+        console.log(totalStudentsPresent)
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

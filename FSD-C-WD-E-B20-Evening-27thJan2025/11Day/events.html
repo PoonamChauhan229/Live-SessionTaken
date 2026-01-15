@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 
+Events >>
+onclick
+ondblclick
+
+
+mouse
+keyboard
+input
+
+-->
+
+<!-- HTML & JS-->
+ <!-- onclick =" what you want >> with the help of function"-->
+<button onclick="clickMe()">Click Me</button>
+<button id="btn">Click Me New</button>
+
+<script>
+    function clickMe(){
+        console.log("Button is Pressed")
+        console.log(2+2)
+        console.log(event)
+    }
+
+    let btnClick=document.getElementById('btn')
+    console.log(btnClick)
+
+    // addEventListener()
+    btnClick.addEventListener('click',function(){
+        console.log(event)
+    }) //event ,annoymous function || arraow function
+
+
+    // Purely JS
+    let btnNew=document.createElement('button')
+    btnNew.innerHTML="Pure JS Click"
+    document.body.append(btnNew)
+
+
+    btnNew.addEventListener('click',()=>{
+        console.log("Pure JS BTN")
+        console.log(2+2)
+    })
+</script>
+
+<!-- JS Purely -->
+
+</body>
+
+</html>

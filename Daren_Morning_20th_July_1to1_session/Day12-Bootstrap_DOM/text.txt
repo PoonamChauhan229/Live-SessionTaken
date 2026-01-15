@@ -1,0 +1,50 @@
+https://getbootstrap.com/
+
+GRID:
+
+12 blocks=>row
+
+4+4+4+4=12
+12 equal size
+even odd 
+3+4+2+4=12
+
+
+DOM:
+
+createElement
+
+document.createElement('div')
+
+innerHTML:element=>tag+content
+
+innerText:content
+
+append:
+
+
+Target 
+
+HTML Page:
+
+ID
+document.getElementById
+
+class
+=>document.getElementsByClassName
+=>Return an array
+
+tagname
+document.getElementsByTagName
+
+queryselector
+#
+.
+
+queryselectorAll
+
+
+
+https://i.ibb.co/4Y3fCLv/pic-bulbon.gif
+
+https://i.ibb.co/PZHKWG4/pic-bulboff.gif

@@ -1,0 +1,10 @@
+Pre Read:
+
+https://www.w3schools.com/html/default.asp
+https://github.com/rvsp/html-CSS/
+
+https://rvsp.github.io/CSS/
+https://web.dev/learn/css/
+https://www.w3schools.com/css/
+https://css-tricks.com/
+https://github.com/rvsp/html-CSS/

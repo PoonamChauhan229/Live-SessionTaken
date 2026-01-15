@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="test()">Print a Message</button>
+    
+
+    <button onclick="counterClick()">Counter</button>
+
+
+
+    <div id="display"></div>
+
+    <script>
+        function test(){
+            console.log("Double Click Me")
+            let divId=document.getElementById("display")
+            divId.innerHTML="event is fired at an element when a pointing device (usually a mouse) is doubleclicked"
+
+            
+            // let para=document.createElement('p')
+            // para.innerHTML="event is fired at an element when a pointing device (usually a mouse) is doubleclicked"
+            // para.style.backgroundColor="purple"
+            // para.style.color="white"
+            // para.style.padding="5px"
+            // para.style.width="30%"
+            // para.style.textAlign="center"
+            // document.body.append(para)
+
+
+        }
+
+
+        let count=0
+        function counterClick(){
+            console.log(event)
+            count++;
+            console.log(count)
+            let divId=document.getElementById("display")
+            divId.innerText=count
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let url = "https://63215e09fd698dfa29f640f3.mockapi.io/user"
+
+        //read
+
+        async function getUsersData() {
+            let data = await fetch(url)
+            let res = await data.json()
+            console.log(res)
+        }
+        getUsersData()
+
+        //read data with specific id
+
+        let id = "/4"
+        async function getUsersSpecificData() {
+            let data = await fetch(url + id)
+            let res = await data.json()
+            console.log(res)
+        }
+        getUsersSpecificData()
+
+        //create
+
+        async function createUsersData() {
+
+            let newUser = {
+                "name": "Darren Gomes",
+                "email": "darren@gmail.com"
+            }
+
+            let data = await fetch(url, {
+                method: "POST",
+                headers: { 'Content-type': "application/json" },
+                body: JSON.stringify(newUser)
+            })
+
+
+            let res = await data.json()
+            console.log(res)
+        }
+        createUsersData()
+
+
+        //update
+
+        async function updateUsersData() {
+
+            let newUser = {
+                "name": "Updated User",
+                "email": "updated@gmail.com"
+            }
+
+            let data = await fetch(url+"/11", {
+                method: "PUT",
+                headers: { 'Content-type': "application/json" },
+                body: JSON.stringify(newUser)
+            })
+
+
+            let res = await data.json()
+            console.log(res)
+        }
+        updateUsersData()
+
+        //Delete
+
+        async function deleteSpecificData() {
+            let data = await fetch(url+"/14",{
+                method:"DELETE"
+            })
+            let res = await data.json()
+            console.log(res)
+        }
+        deleteSpecificData()
+
+    </script>
+</body>
+
+</html>

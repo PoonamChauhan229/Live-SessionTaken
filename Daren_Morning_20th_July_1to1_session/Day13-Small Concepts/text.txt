@@ -1,0 +1,6 @@
+settimeout
+-setting a timer to perform certain activity , only once 
+
+setinterval
+-setting a timer , repeat after certain interval
+-animations

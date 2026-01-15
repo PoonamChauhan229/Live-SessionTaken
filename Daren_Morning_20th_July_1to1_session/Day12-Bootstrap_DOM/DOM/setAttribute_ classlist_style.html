@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border:10px solid salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h6>Hello , DOM Welcome </h6>
+    <script>
+        var divtag = document.createElement('div')        
+        divtag.innerHTML = "<h1>Hi i m learning DOM</h1>"
+        divtag.setAttribute('class',"wrapper")
+        divtag.setAttribute('id',"wrapperid")
+        divtag.style.backgroundColor="yellow"   
+        divtag.style.color="red"   
+        document.body.append(divtag)
+
+
+        var paratag=document.createElement('p')
+        paratag.classList.add('main','main1','main2','main4')
+        paratag.style.backgroundColor="pink"
+        paratag.style.border="7px solid green"
+        paratag.innerText="<h1>Hi ParaTag, Welcome to our World of Coding</h1>"
+        document.body.append(paratag)
+    </script>
+</body>
+
+</html>

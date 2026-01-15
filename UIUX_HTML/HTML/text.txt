@@ -1,0 +1,40 @@
+HTML >>HYPERTEXT MARKUP LANGUAGE
+    >> write >> displayed 
+    >> structure/skeletion
+
+tags >>    || 
+    self closing       <tagname/> || <tagname>
+    opening & closing  <tagname> </tagname> 
+
+
+    >>.html
+    >>index.html
+
+    html  >>Parent/Root element  
+        > head  >>first child
+        > body  >>last child/second child
+
+<html>
+    <head></head>
+    <body></body>
+</html>
+
+<body></body>
+
+several tag
+
+heading  >> h1 to h6 opening & closing tag
+paragraph >>p
+image
+anchor
+div  >> wrapper /container  >> block level
+span >>inline 
+
+no errors >> html
+
+attributes
+
+form >> <form></form>
+
+
+

@@ -1,0 +1,185 @@
+HTML  >> Make Structure >>Skeleton
+CSS   >> Design >> Styling >>Good Better  >>Flesh
+JS    >> Important Part >>Mind ||Brain
+
+Static Websitic 
+JS >>Language of the Web 
+
+Datatypes:
+
+Data which going to store in a variables
+Type of that Data
+
+>>console.log("Print 2 nos")
+ClassRoom
+>>Girls  >>7
+>>Boys   >>5
+
+Primitive  >> Inbuilt Datatype
+Composite
+Trivial
+
+Primitive  >> Inbuilt Datatype
+
+Number  >>32 ||32.5 ||435678987654
+typeOf(value) >> Datatype
+typeof(2)
+'number'
+typeof(2.2)
+'number'
+typeof(0.2)
+'number'
+typeof(234567809876543234567890098765432345678)
+'number'
+typeof(234567809876543234567890098765432345678.90)
+'number'
+typeof(-234567809876543234567890098765432345678.90)
+'number'
+
+
+String
+Any thing ""
+hjwhejhwj
+VM193:1 Uncaught ReferenceError: hjwhejhwj is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM193:1Understand this errorAI
+"jshdjhshd"
+'jshdjhshd'
+typeof("jhjhjhjhjhjh")
+'string'
+typeof("Kishore")
+'string'
+typeof("Aanchal")
+'string'
+
+Methods :
+methodName()
+typeOf() >>identify what Datatype it is 
+
+2+2 =4
+"2"+2=22 >> Addition >>Concatenation
+
+Number >>+ >>Addition
+String >>+ >>Concatenation >> Together 
+
+"10"+10+10    >>'101010'
+10+10+"20"+10 >>'202010'
+"10"+"30"+20  >>'103020'
+
+>>Boolena
+>>true  >>"true"
+>>false >>"false"
+
+typeOf(true)
+typeOf("true")
+
+typeOf(false)
+typeOf("false")
+
+
+Composite
+>>Array 
+>>reprsesnted as []
+>>store heterogenoues data
+>>string number boolean 
+>>arr=["hi","hello",23,45,67,100,true,false]
+>>index || elements
+>> element >>hi helllo  >>8 elements >>count >>1 >>length >>8
+>>index >>0 
+hi >>0
+hello >>1
+23 >>2
+45 >>3.....
+
+index no >>access ur elements
+arr[0] >>kishore
+arr[1] >>20
+arr[2] >>98
+arr[3]>>95
+arr[7]>>false
+
+>>length
+arr.length
+
+
+Objects >>
+{}
+key:value  >>property
+obj={
+    name:"kishore"
+    age:20,
+    engMrks:98
+    mathMrks:95
+}
+
+//user
+userObj={
+    username:"test01",
+    email:"test@gmail.com"
+    contactNum:23456545,
+    address:"Chennai"
+}
+
+//dot operator >>.
+obj.name >>kishore
+obj.age >>20
+
+userObj.username >>test01
+
+//upadte >>.
+username.email="anush@gmail.com"
+
+userObj={
+    username:"test01",
+    email:"anush@gmail.com"
+    contactNum:23456545,
+    address:"Chennai"
+}
+//add
+username.hobbies="Driving"
+
+userObj={
+    username:"test01",
+    email:"anush@gmail.com"
+    contactNum:23456545,
+    address:"Chennai",
+    hobbies:"Driving"
+}
+
+delete userObj.contactNum
+
+
+//Operators
+Assignment        =
+Comparision       ==   ||  ===  ||>=  ||<= ||> ||<
+Arithmeatic       + ||- || * || /  || % || ** || ++ || -- || !== ||! 
+Logical           AND(&&)  || OR(||) || NOT(!)
+
+a=5
+a==5
+a===5  >>strict checking >> value + Datatype
+
+
+"100"==100   >>true              >> value
+"100"===100 >> false             >> value +Datatype
+
+
+&& >> SMTWTFS  >>JFM....D  >> ALL
+x=10
+&& >> true 
+x>5 && x<15  && x<20>> true 
+x>5 && x>15 >> false  
+
+|| OR >> anyone
+x>5 || x>15 >> true 
+
+
+5<12      >>true
+5<"12"    >>true
+5<"Suman" >>false
+5>"Suman" >>false
+5=="Suman">>false
+"5"<"12"  >>false    5 1
+"5">"12"  >>true     5 1  
+"5"=="12" >>false
+

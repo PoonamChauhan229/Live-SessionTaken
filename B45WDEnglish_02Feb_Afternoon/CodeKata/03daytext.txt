@@ -1,0 +1,46 @@
+console.log(userInput)
+// soln 1
+var a=userInput[0]
+console.log(userInput[0].length)
+for(var i=0;i<a.length;i++){
+    console.log(a[i])
+}
+
+// soln 2
+var arr=userInput[0].split("")
+console.log(arr)
+for(var j=0;j<arr.length;j++){
+    console.log(arr[j])
+}
+
+// soln 3
+console.log(arr[0])
+console.log(arr[1])
+console.log(arr[2])
+console.log(arr[3])
+console.log(arr[4])
+console.log(arr[5])
+console.log(arr[6])
+console.log(arr[7])
+
+// soln 4
+console.log(userInput[0].split("").join("\n"))
+
+
+
+console.log(userInput[0]*1,userInput[0]*2,userInput[0]*3)
+
+var arr=[]
+for(var i=1;i<=3;i++){
+//   console.log(i*userInput[0])
+   arr.push(i*userInput[0])
+}
+console.log(arr.join(" "))
+
+var str="";
+for(var j=1;j<=3;j++){
+  str=str+j*userInput[0]+" "
+  console.log(str)
+}
+console.log(str.trim())
+  //end-here

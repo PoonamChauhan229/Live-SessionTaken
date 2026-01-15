@@ -1,0 +1,9 @@
+3 Keywords >> declare
+var  >>JS >> ES5
+
+Launched later >> need of it >>ES6
+let 
+const
+
+var 
+var a=100

@@ -1,0 +1,48 @@
+Promise:
+
+>Initial State is Pending
+>>it will be in pending till the async operation is in progress
+
+After this either it will be in Fulfilled or Rejected State
+promise exectued>>Fulfilled and we can get the value
+promise rejected>>error 
+
+Syntax
+const p=new Promise(()=>{})
+Return type=>object
+
+Promise chaining
+changing of the promise
+=>handle multiple async operations
+=>multiple .then we are using
+=>complexity increases
+=>we dont know when it will reject
+
+
+To avoid chaining , we something called async and await
+
+--------
+
+Multiple promises
+way we are handling is not proper way
+
+in such cases , we have something called Promise.all
+
+=>Deals with all the promises
+=>Until all the promises are fulfilled, it wont print the 
+    single promise
+=>its waits for all the promises to be resolved
+=>We will get an array of promises
+=>Gives the result in an iterable form
+
+Suppose if any promise fails
+
+it will directly go to catch and rest promises will not execute
+
+but , if we want to handle all promises at a time, 
+we need to use promise.all
+
+because of this reason also, we wont use promise all 
+as its not an effective way
+
+https://www.codewithharry.com/videos/javascript-tutorials-in-hindi-65/

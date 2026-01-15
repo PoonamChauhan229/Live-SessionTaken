@@ -1,0 +1,9 @@
+CRUD-
+Create
+Read
+Update
+Delete
+
+https://mockapi.io/
+
+https://mockapi.io/docs

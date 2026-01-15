@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h6>Hello , DOM Welcome </h6>
+    <script>
+        var divtag = document.createElement('div')        
+        divtag.innerHTML = "<h1>Hi i m learning DOM</h1>"      
+        document.body.append(divtag)
+
+
+        var paratag=document.createElement('p')
+        paratag.innerText="<h1>Hi ParaTag, Welcome to our World of Coding</h1>"
+        document.body.append(paratag)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+css >> inline >> style=""  >> inside the tag   >> applioes to the single tag
+ |external   >> seperate file                >> to wherever link
+ 
+ |internal  >> in the same file              >> within  the entirepage
+ 

@@ -1,0 +1,92 @@
+Array Methods:
+var arr=[1,2,3,4,5]
+
+MRF:
+Map
+Filter
+Reduce
+
+perform multiply this arr*2
+step1:for loop
+step2:multiplication
+step3:temp var and storing
+step4:console the output
+
+
+1*2=2
+2*2=4
+3*2=6
+4*2=8
+5*2=10
+Map Method:
+-Transform the Array
+-Return the output in an new array
+-Orignal array is not changed
+-Syntax
+  -arr.map()
+  -function as an parameter=>element as an parameter
+  -work on each and every element of that array
+  -arr.map((element)=>{element*2})
+
+
+Filter Map:
+-function as an parameter
+-condition=>give you the output
+-condition is satisfied-gt the o/p
+-condition not satisfied-ignored
+
+Syntax:
+arr.filter((element)=>{})
+
+
+Reduce:
+-reduces the enitre array element in an single value
+-function as an parameter
+    -2 parameter
+    -accumalator=>optional ||consider 1st element as it accumalator
+    -element=>element of the array
+
+1st scenario:-we are not providing accumalator
+
+arr.reduce((accumulator,element)=>accumalator+element)
+var arr=[1,2,3,4,5]
+acc=1
+element=2
+
+acc=3
+element=3
+
+acc=6
+element=4
+
+acc=10
+element=5
+
+15
+
+2nd scenario: we will provide the accumalator value
+
+arr.reduce((accumulator,element)=>accumalator+element,100)
+
+acc=100
+element=1
+
+acc=101
+element=2
+
+acc=103
+element=3
+
+acc=106
+element=4
+
+acc=110
+element=5
+
+115
+
+
+
+
+
+

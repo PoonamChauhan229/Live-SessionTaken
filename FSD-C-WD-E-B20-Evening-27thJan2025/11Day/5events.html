@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" tabindex="0">keyboard Events</h1>
+    <input type="text" value="" placeholder="Type something" onkeypress="test()">
+
+    <script>    
+        let heading=document.getElementById('title')
+        heading.addEventListener('keyup',(event)=>{
+            console.log(event)
+        })
+
+        function test(){
+            console.log(event)
+            let para=document.createElement('p')
+            para.innerHTML=event.key
+            document.body.append(para)
+        }
+    </script>
+</body>
+</html>

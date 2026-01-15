@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- selectors 
+        id seclectors  >> unique in nature 
+
+        class selectors >> same class to multiple elements
+       
+        tag selectors   >> n no of same tags
+    -->
+    <h1 id="heading1">Hello World</h1>
+
+    <div class="container">
+        <div class="navItems">Home</div>
+        <div class="navItems">About</div>
+        <div class="navItems">Features</div>
+    </div>
+        <script>
+            // document.getElementById()
+            // document.getElementsByClassName()
+            // document.getElementsByTagName()
+            let heading1=document.getElementById('heading1')
+            console.log(heading1)
+
+            let wrapper=document.getElementsByClassName('container') // inside []
+            console.log(wrapper)
+
+            let navbarItems=document.getElementsByClassName('navItems')
+            console.log(navbarItems)
+
+            for(let i=0;i<navbarItems.length;i++){
+                console.log("Statement:",i+1,navbarItems[i])
+                navbarItems[i].innerHTML="This is my Navbar Items"
+                navbarItems[i].style.border="2px solid purple"
+                navbarItems[i].style.margin="10px"
+                navbarItems[i].style.width="268px"
+                navbarItems[i].style.padding="10px"
+
+
+                let button=document.createElement('button')
+                button.innerHTML="Click"
+                button.style.margin="10px"
+                button.style.backgroundColor="purple"
+                button.style.color="white"
+                button.style.padding="8px 30px"
+                button.style.border="none"
+
+                navbarItems[i].append(button)                
+            }
+
+            let divAllItems=document.getElementsByTagName('div')
+            console.log(divAllItems)
+
+        </script>
+</body>
+</html>

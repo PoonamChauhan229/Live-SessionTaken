@@ -1,0 +1,38 @@
+Downward Triangle Star Pattern
+*****
+****
+***
+**
+*
+
+Right pascal star pattern
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+Read:
+https://medium.com/analytics-vidhya/objects-and-its-internal-representation-in-javascript-c5b576b20a99
+
+
+Array/Object:
+
+For the given JSON iterate over all for loops (for, for in, for of)
+
+Create your own resume data in JSON format
+
+var resume={
+   "name":"Poonam"
+   "username":
+   "hobbies":[]
+   "address":{
+    "postalcode":78956,
+    "locality":"xyz mall"
+   }
+}

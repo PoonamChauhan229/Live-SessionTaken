@@ -1,0 +1,38 @@
+HTML
+>>VS CODE
+    >> Install extensions >> Ease out 
+
+    vscode-icons         >>VSCode Icons Team
+    Material Icon Theme  >>Philipp Kief
+    HTML Boilerplate     >>sidthesloth
+    HTML CSS Support     >>ecmel
+    Live Server          >>Ritwick Dey
+
+HTML >>
+HYPERTEXT MARKUP LANGUAGE
+WEB PAGES + WEB APPLICATIONS
+LANGUAGE OF THE WEB
+STATIC
+
+TAGS
+>> SURROUND THE TEXT WITHIN THE TAGS
+<></>
+<TAG></TAG>   =====>OPENING TAG CLOSING TAG
+<TAG/>||<TAG> =====>SELF CLOSING TAG
+
+ELEMENT
+<TAG>TEXT/CONTENT</TAG>
+
+ATTRIBUTES
+ADDITIONAL INFO ABOUT THE TAG
+ATTRIBUTE_NAME= ATTRIBUTE_VALUE
+<TAG ATTRIBUTE_NAME= ATTRIBUTE_VALUE></TAG>
+
+
+FINAL LOOK
+<TAG ATTRIBUTE_NAME= ATTRIBUTE_VALUE>TEXT/CONTENT</TAG>
+
+
+EXTENSION >>.html
+
+Boilerplate >>html:5

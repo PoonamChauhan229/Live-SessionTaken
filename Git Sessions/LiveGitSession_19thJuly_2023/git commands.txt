@@ -1,0 +1,18 @@
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PoonamChauhan229/LiveGitSession_19thJuly_2023_B50.git
+git push -u origin main
+
+When we do any change in our existing or add any files.
+git add .
+git commit -m"new git commands added"
+git push
+
+Task:
+Above 4 lined which we added should be pushed to github.
+
+
+
+

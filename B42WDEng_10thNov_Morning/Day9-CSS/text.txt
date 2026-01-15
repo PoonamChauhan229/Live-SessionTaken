@@ -1,0 +1,66 @@
+CSS:
+Cascading Style Sheet
+more beautiful, more pleasing,more elegant
+great user expereince.
+
+3types of CSS:
+inline
+internal
+external
+
+inline CSS:
+using the style attribute inside the HTML tag
+<p style="color:red;">Hello</p>
+
+key:value
+color:red;
+
+Selectors:
+tag Selectors
+class Selectors
+Id Selectors
+
+tagname/classname/idname{
+    key:value
+}
+p{
+    color:red;
+}
+external CSS:
+.css
+
+Any project:
+index.html=>html
+style.css=>styling
+script.js=>js
+
+Priority:
+inline>internal>external
+
+Y need of Selectors:
+design and development becomes more difficult
+tedious
+
+Tagselector:
+
+Class selector:dot followed by our classname
+n of elements=> should look similar
+class="poonam"
+class="header"
+class="subheader"
+
+.classname{
+    key:value
+}
+
+Idselector:# followed by our idname
+unique in nature and should not get repeated.
+id="poonam"
+id="navbar"
+
+
+
+
+
+
+

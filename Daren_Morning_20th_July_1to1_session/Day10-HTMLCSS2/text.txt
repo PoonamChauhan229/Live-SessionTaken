@@ -1,0 +1,18 @@
+<!-- 3 Types Of CSS -->
+Internal CSS-Also prefer
+Inline CSS-Avoid
+External CSS---prefer
+
+3 TYpes of Selectors
+tag Selectors=>select it by tag name
+id Selectors
+=>select it idname
+=>idname =>unique
+=>#idname
+
+class selector
+=>classname=>multiple places
+=>.classname
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1 id="heading1">Hello World</h1>
+
+    <div class="container">
+        <div class="navItems">Home</div>
+        <div class="navItems">About</div>
+        <div class="navItems">Features</div>
+    </div>
+
+    <script>
+        // document.querySelector()
+        // document.querySelectorAll()
+
+        // .className
+        let navbarItems=document.querySelector('.navItems')
+        console.log(navbarItems)
+
+        let navbarItems2=document.querySelectorAll('.navItems')
+        console.log(navbarItems2)
+
+        //tagName
+        let divItems1=document.querySelector('div')
+        console.log(divItems1)
+
+        let divItems2=document.querySelectorAll('div')
+        console.log(divItems2)
+
+        // id
+        // #idName
+
+        let headingId=document.querySelector('#heading1')
+        console.log(headingId)
+
+        let headingId1=document.querySelectorAll('#heading1')
+        console.log(headingId1)
+    </script>
+</body>
+</html>

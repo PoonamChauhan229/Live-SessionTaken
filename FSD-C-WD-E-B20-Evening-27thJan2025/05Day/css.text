@@ -1,0 +1,47 @@
+CSS : cascading style sheets
+websites >> beautiful ,elegant
+
+>> great user experience
+
+3 ways >>written
+>inline   within the line >>higher importnace >>applicable to that line
+>internal within the page >> applicable to that page >>
+>external >>sepertae file css >> linking whether we need 
+
+
+CSS + HTML 
+
+HTML >> structure >> CSS >> design it 
+
+Extension >>.css
+
+inline
+<p>Hi m Poonam</p>
+<p>Hi m Poonam</p>
+<p>Hi m Poonam</p>
+<p>Hi m Poonam</p>
+
+CSS Selectors 
+tag Selectors   >>p , h1, h5, div etc ......
+id Selectors
+class Selectors
+
+
+
+id >> unique in nature >> only once
+id="idName"
+#idname{
+    .....
+    ....
+    ....
+}
+
+class >> more than once
+class="className"
+.className{
+    .....
+    ....
+    ....
+}
+
+

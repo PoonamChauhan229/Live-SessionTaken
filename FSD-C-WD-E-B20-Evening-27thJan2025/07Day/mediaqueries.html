@@ -1,0 +1,48 @@
+<!-- media queries >> adjust viewport
+Responsive to screen resolution >> Responsive Website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        color:navy;
+    }
+    p{
+        background-color: yellowgreen;
+    }
+    /* within 400px this color should be visible */
+    /* width : */
+    /* maximum 400px width >> green */
+   @media screen and (max-width:400px){
+    div{
+        background-color: green;
+        font-size: 30px;
+    }
+   }
+   /* beyond 500px >>pink color */
+   /* min-width:500px */
+   @media screen and (min-width:500px){
+    div{
+        background-color: pink;
+        font-weight: bold;
+    }
+   }
+
+   /* between >> 600 to 800 px */
+   @media (min-width:600px) and (max-width:800px){
+    p{
+        background-color: red;
+    }
+   }
+</style>
+<body>
+    <div>Hi Everyone</div>
+    <p>Hello World</p>
+</body>
+</html>

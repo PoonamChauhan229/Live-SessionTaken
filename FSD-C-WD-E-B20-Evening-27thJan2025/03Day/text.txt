@@ -1,0 +1,24 @@
+Objects:
+
+let obj={
+    name:"guvi",
+    age:10
+}
+
+JSON:
+JavaScript Object Notation:
+datatype :string
+
+let jsonObj={
+    "name":"guvi",
+    "age":10
+}
+
+sending Request to the server
+UI :    request>>>codekata .....>>>server 
+server >>response >> 200(success)
+
+server need data >> json data >>
+server response >> string
+
+json

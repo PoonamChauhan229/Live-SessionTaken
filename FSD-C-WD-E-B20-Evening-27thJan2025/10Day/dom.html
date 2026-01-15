@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Helloword using HTML -->
+    <h2>Hello World from HTML</h2>    
+    <!-- Hello World using JS >> in the body place in the document -->
+
+  
+    <!-- document Methods -->
+     <!-- script tag  -->
+      <script>
+        // element >> tag + content
+        let header= document.createElement('h2') // tag name
+        console.log(header)
+        
+        // innerHTML  >>HTML /Text || innerText >> Text
+        header.innerText="Hello World From JS"
+
+        console.log(document.body)
+
+        document.body.append(header)
+
+        // innerHTML
+
+        // div Tag /section >> some text 
+        let division=document.createElement('div')
+        // division.innerHTML="Normal Text1"
+        // division.innerHTML="<h1>Normal Text1</h1>"
+
+        // division.innerText="Normal Text2"
+        division.innerText="<h1>Normal Text2</h1>"
+        document.body.append(division)
+
+      </script>
+
+
+</body>
+</html>

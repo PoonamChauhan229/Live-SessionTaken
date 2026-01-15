@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  XML HTTP Request:to interact with the server via API =>4 steps
+        // 1.create an XHR object
+        // new keyword
+        // request is userdefined
+        
+        var request=new XMLHttpRequest();
+
+        //entire program we will ne referring to request.
+        // 2.opening an connection:
+            //3 parameters=>
+            //=>HTTP Method=>GET
+            //=>URL=>https://restcountries.com/v3.1/all 
+            //=>Boolean=>true(optional paramater)
+        request.open('GET','https://restcountries.com/v3.1/all',true)
+
+        //3.sending an connection
+        // initiate a bridge
+        request.send()
+
+        //4.server response
+        // once the server response, we have to process that data
+        //onload=>event
+        //event=>action is performed event is triggered
+        //this.response=>server will response//request.response
+
+        request.onload = function(){
+            //block of code
+            console.log(this.response)//string
+
+            var data=JSON.parse(this.response)
+            console.log(data)
+            
+            var data1=JSON.parse(request.response)
+            console.log(data1)
+
+            // use for loop=>Print the subregion of the country.
+
+            for(var i=0;i<data.length;i++){
+                console.log(data[i].subregion)
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

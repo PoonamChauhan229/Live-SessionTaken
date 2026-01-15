@@ -1,0 +1,98 @@
+BOX MODEL:
+
+Kind of Wrapper =>element
+
+BORDER-Surrounded by the lines
+MARGIN-space around the content outside the definite borders
+PADDING-space around the content inside the definite borders
+
+
+Clockwise:
+
+padding-top: ;
+padding-right: ;
+padding-bottom: ;
+padding-left: ;
+
+margin-top: ;
+margin-right: ;
+margin-bottom: ;
+margin-left: ;
+
+Short hand properties
+
+margin:10px;
+padding:10px;
+
+margin:10px 20px ;
+padding:5px 15px;
+
+
+multiple classes 
+
+div  -1 class="divwidth divheight1"
+div  -2 class="divwidth divheight2"
+div  -3 class="divwidth divheight3"
+
+width:500px====>3 divs
+
+height:100px====> 1 div divheight1
+height:200px====> 2 div divheight2
+height:300px====> 3 div divheight3
+
+
+Flex:
+alignment
+handle either row or column
+
+1-flex directions
+4 values:
+row=>by defaut=>left to right
+row-reverse=>right to left
+
+column=>top to bottom
+coulmn-reverse=>bottom to top
+
+2-flex-wrap
+=>to handle when the data overflows outside the container
+Flex wrap comes into picture
+
+Flex-wrap
+nowrap=>by defaut
+wrap=>wrap itself in the container, automatically it comes to the next row
+wrapreverse
+
+3-Justify content
+-align horizontally
+center=>center
+
+flex-end=>right corner
+
+flex-start=>by default(left)
+
+space-between=>
+1st=>left corner
+last=>right corner
+for in between items => equally space is distrubuted
+
+space-around=>
+Both the sides they will have same space
+it will be alloted to each items
+so inbetween items have the double space
+
+space-evenly=>
+evenly space is distributed
+
+4-align-content
+
+
+GRID:
+2 dimensional grid system
+Grid Sysytem=>with rows and columns
+Its very fast
+
+
+
+      
+
+

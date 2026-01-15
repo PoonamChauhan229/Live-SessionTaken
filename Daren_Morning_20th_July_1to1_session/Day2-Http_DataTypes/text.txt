@@ -1,0 +1,281 @@
+HTTP Return codes
+1XX(100-199)>Hold on =>Processing stage=>Informational Purpose
+
+2XX(200-299)>Sucess=>Successfully Retrived and viewed in UI
+
+3XX(300-399)>Redirecting
+
+4XX(400-499)>Client Screwed Up
+
+5XX(500-599)>Server Screwed Up
+
+
+More in Detail: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Datatypes:
+Available in JavaScript and the inbuilt properties
+
+1.Primitive Datatypes
+2.Composite Datatypes
+3.Trivial Datatypes
+
+
+Primitive Datatypes
+>inbuilt Datatypes
+>Number
+>String
+>Boolean
+
+1.Number
+>>with and without double quotes
+var a=20
+console.log(a)
+>20
+
+>typeof
+>Return the Datatype of the particular variable
+console.log(typeof(a))
+
+with double quotes/single quotes=>Datatypes will become string
+
+
+>>>>>JS is a weakly type of language<<<<<<<<<
+
+2.String
+>inside double quotes
+
+var abc='Hello Guvi'
+console.log(typeof(abc))
+>>'string'
+
+3.Boolean=>true/false
+var xyz=true
+console.log(typeof(xyz))
+>>'boolean'
+
+var xcv=false
+console.log(typeof(xcv))
+>>'boolean'
+
+
+var d=23;
+d="guvi geek"
+d=true
+console.log(typeof(d))>>>boolean
+console.log(typeof(typeof(d)))>>>String
+
+Composite Datatype:
+
+Arrays|Objects
+Array:
+>sequential chunks of memory
+>start with 0 index and ends at memorylocation -1(n-1)
+>represent as element
+>Combination of Datatypes
+>Hetrogenous Datatypes
+>addrseed=>[] and seperated by commas
+>Also refeered as Objects
+var arr=[1,2,3,4]
+var arr1=[1,2,3,4,"hello","guvi","geek",true,false]>>Hetrogenous data(Combination of data)
+
+        0: 1
+        1: 2
+        2: 3
+        3: 4
+        4: "hello"
+        5: "guvi"
+        6: "geek"
+        7: true
+        8: false
+
+Length of the array:
+.length
+
+arr1.length
+>9
+
+Replce
+arr1[1]="JS"
+
+arr1[1]="JS"
+'JS'
+
+arr1[7]
+true
+arr1[2]
+3
+
+Add:
+
+arr1[9]="google"
+'google'
+arr1
+(10) [1, 'JS', 3, 4, 'hello', 'guvi', 'geek', true, false, 'google']
+
+
+Question:
+
+arr1[100]="tutor"
+1.length?101
+2.Last Index?100
+3. WHat will be values after 9th Index till 99th Index?undefined
+
+Objects:
+>key:value pair
+>addressed{}
+>seperated by commas
+
+var obj={}
+
+var obj={
+    name:"Daren",
+    age:"20",
+    email:"daren123@gmail.com"
+}
+console.log(obj)
+
+2 ways to acess
+.(dot operator)
+[](square bracket)
+
+
+var obj1={
+    name:"Daren",
+    age:"20",
+    email:"daren123@gmail.com",
+    "first name":"Darren Gomes"
+}
+
+obj1["first name"]
+'Darren Gomes'
+obj1.first name
+>>VM1254:1 Uncaught SyntaxError: Unexpected identifier
+obj1.name
+'Daren'
+obj1.age
+'20'
+obj1.fisrt name
+>>VM1348:1 Uncaught SyntaxError: Unexpected identifier
+obj1["first name"]
+'Darren Gomes'
+
+
+var obj2={
+    name:"Daren",
+    age:"20",
+    email:"daren123@gmail.com",
+    "first name":"Darren Gomes",
+    attendance:[98,78,89]
+}
+//read
+obj2.attendance[0]
+
+obj2.attendance
+(3) [98, 78, 89]
+obj2.attendance[0]
+98
+obj2.attendance[1]
+78
+
+//insert
+obj2.gender="male"
+obj2
+
+obj2.hobbies=["singing","dancing","coding"]
+
+//update
+obj2.age=22
+
+//length:
+console.log(Object.keys(obj2).length)
+
+
+//delete
+
+delete obj2.age
+true
+obj2
+{name: 'Daren', email: 'daren123@gmail.com', first name: 'Darren Gomes', attendance: Array(3), gender: 'male', …}
+attendance: (3) [98, 78, 89]
+email: "daren123@gmail.com"
+first name: "Darren Gomes"
+gender: "male"
+hobbies: (3) ['singing', 'dancing', 'coding']
+name: "Daren"
+
+TRivial Datatype:
+null >>Empty
+undefined>> intialized but values not assigned
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 
+        const p=new Promise(()=>{})
+        console.log(p)
+
+        const p1=new Promise((resolve,reject)=>{
+            resolve("hi guvi geek")
+            reject("p1 rejected")
+        })
+        console.log(p1)
+        // 
+        const p2=new Promise((resolve,reject)=>{            
+            reject("No Mood Today, Good Bye!!!")
+            resolve("OKAY Welcome")
+            
+        })
+        console.log(p2)
+        // 
+        const p3=new Promise((resolve,reject)=>{
+            if(true){
+                resolve("Hi guvi geek, Welcome here")
+            }
+            else{
+                reject("Error")
+            }
+        })
+        console.log(p3)
+        // 
+        const p4=new Promise((resolve,reject)=>{
+            if(false){
+                resolve("Hi guvi geek, Welcome here")
+            }
+            else{
+                reject("Error")
+            }
+        })
+        console.log(p4)
+
+        // age=21
+        var age=78
+        const p5=new Promise((resolve,reject)=>{
+            if(age>20){
+                resolve("Eligible for Voting")
+            }
+            else{
+                reject("Not ELigible")
+            }
+        })
+        console.log(p5)
+
+        p5.then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+    </script>
+</body>
+</html>

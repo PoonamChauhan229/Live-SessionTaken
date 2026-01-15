@@ -1,0 +1,65 @@
+var str="Hello"
+
+str.replace("e","t")
+'Htllo'
+str
+'Hello'
+str.replace("l","b")
+'Heblo'
+str.replace(/l/g,"b")
+'Hebbo'
+var str="Hello how are you 67 you you you"
+undefined
+str.replace("you","we")
+'Hello how are we 67 you you you'
+str
+'Hello how are you 67 you you you'
+str.replace(/you/g,"we")
+'Hello how are we 67 we we we'
+
+
+var arr=userInput[0].split(" ")
+console.log(arr)
+var a=parseInt(arr[0])
+var b=parseInt(arr[1])
+var c=parseInt(arr[2])
+
+ var x=Math.sqrt((Math.pow(b,2))-(4*a*c))
+ 
+ var q=(-b+x)/2*a
+ console.log(q.toFixed(2))
+ 
+ var p=(-b-x)/2*a
+ console.log(p.toFixed(2))
+
+For loop:
+
+Q1:
+Write a code to get an integer N and print the even values from 1 till N in a separate line.
+
+Input Description:
+A single line contains an integer N.
+
+Output Description:
+Print the even values from 1 to N in a separate line.
+
+Sample Input :
+6
+Sample Output :
+2
+4
+6
+
+Q2:
+Write a code to get an integer N and print the sum of  values from 1 to N.
+
+Input Description:
+A single line contains an integer N.
+
+Output Description:
+Print the sum of values from 1 to N.
+
+Sample Input :
+10
+Sample Output :
+55

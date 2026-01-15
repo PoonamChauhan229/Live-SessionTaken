@@ -1,0 +1,9 @@
+Git hub session
+git init
+git remote add origin https://github.com/PoonamChauhan229/secondrepo_Gitsession_2ndSeptember.git
+git add .
+git commit -m "first commit"
+git push/git push --set-upstream origin master
+
+
+

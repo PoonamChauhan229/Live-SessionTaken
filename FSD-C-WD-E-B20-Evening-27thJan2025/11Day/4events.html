@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        // calculator >> onclick + keyboard 
+        // 
+        // document.addEventListener('keydown',(event)=>{
+        //     console.log(event)
+        //    console.log(event.code,event.key, event.keyCode)
+        //    if(event.key=="Enter"){
+        //     console.log("Enter key is pressed")
+        //     alert("ENter Key")
+        //    }else{
+        //     console.log("Other Key Pressed")
+        //    }       
+        // })
+
+        // Normal KeyPress
+        document.addEventListener('keypress',(event)=>{
+            console.log(event)
+        })
+
+        // Long Press >> Release 
+        document.addEventListener('keyup',()=>{
+            console.log(event)
+        })
+
+        // As soon as you press it >> Press down 
+         document.addEventListener('keydown',(event)=>{
+            console.log(event)
+         })
+    </script>
+</body>
+</html>

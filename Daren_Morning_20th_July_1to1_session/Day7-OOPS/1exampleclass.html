@@ -1,0 +1,41 @@
+<!-- // Write a “person” class to hold all the details. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(name, age, height, gender) {
+                this.name = name,
+                    this.age = age,
+                    this.height = height,
+                    this.gender = gender
+
+            }
+        }
+
+        let x = new Person("John", 28, "6'2", "Male");
+        let y = new Person("Jane", 30, "5'8", "Female");
+        let z = new Person("Joan", 22, "5'3", "Female");
+
+        console.log(`Name:${x.name}, age: ${x.age}, height:${x.height} and gender: ${x.gender}`);
+        console.log(`Name:${y.name}, age:${y.age}, height:${y.height}, and gender:${y.gender}`);
+        console.log(`Name :${z.name}, age:${z.age}, height :${z.height}, and gender :${z.gender}`);
+
+        x.name="daren"
+        x.age="20"
+        x.gender="male"
+        x.height="6'5"
+        console.log(`Name:${x.name}, age: ${x.age}, height:${x.height} and gender: ${x.gender}`);
+    </script>
+</body>
+
+</html>

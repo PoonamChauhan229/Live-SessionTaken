@@ -1,0 +1,159 @@
+<!-- Dropdown 
+Time 15-20 mins
+Courses
+    >HTML
+    >CSS
+    >JS
+
+When u move ur cursor on Courses >> 
+HTML CSS JS should be visible
+
+7:15 task will end 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>LandingPage</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navBar">
+            <div><i class="fa-solid fa-id-badge styleIcon"></i>FSDB20</div>
+            <div class="navItems">
+                <div class="navsubItems"><i class="fa-solid fa-house styleIcon"></i>Home</div>
+                <div class=" navsubItems dropdown"><i class="fa-solid fa-book styleIcon"></i>AboutUs<i class="fa-solid fa-caret-down styleCourses"></i>
+                        <div class="dropdownList">
+                            <div class="name"><i class="fa-brands fa-html5 styleIcon"></i>Mission</div>
+                            <div class="name"><i class="fa-brands fa-css3-alt styleIcon"></i>Vision</div>
+                            <div class="name"><i class="fa-brands fa-square-js styleIcon"></i>Team</div>
+                        </div>
+                </div>
+                <div class="navsubItems dropdown"><i class="fa-solid fa-book styleIcon"></i>Courses2<i class="fa-solid fa-caret-down styleCourses"></i>
+                    <div class="dropdownList">
+                        <div class="name"><i class="fa-brands fa-html5 styleIcon"></i>HTML</div>
+                        <div class="name"><i class="fa-brands fa-css3-alt styleIcon"></i>CSS</div>
+                        <div class="name"><i class="fa-brands fa-square-js styleIcon"></i>JS</div>
+                    </div>
+                </div>
+                <div class="navsubItems dropdown"><i class="fa-solid fa-book styleIcon"></i>Courses3<i class="fa-solid fa-caret-down styleCourses"></i>
+                    <div class="dropdownList">
+                        <div class="name"><i class="fa-brands fa-html5 styleIcon"></i>HTML</div>
+                        <div class="name"><i class="fa-brands fa-css3-alt styleIcon"></i>CSS</div>
+                        <div class="name"><i class="fa-brands fa-square-js styleIcon"></i>JS</div>
+                    </div>
+                </div>
+                <div class="navsubItems"><i class="fa-solid fa-phone-volume styleIcon"></i>Contact Us</div>
+            </div>
+        </div>
+        <div class="header">
+        </div>
+        <div class="productsSection">
+            <div class="product product1">
+                <div class="productImage productImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+                <div class="productSummary">Lorem ipsum dolor sit amet consectetur consectetur ipsum....</div>
+            </div>
+            <div class="product product2">
+                <div class="productImage productImage2"><i class="fa-brands fa-css3-alt" style="font-size: 100px;"></i></div>
+                <div class="productSummary">Lorem ipsum dolor sit amet consectetur consectetur ipsum....</div>
+            </div>
+            <div class="product product3">
+                <div class="productImage productImage3"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+                <div class="productSummary">Lorem ipsum dolor sit amet consectetur consectetur ipsum....</div>
+            </div>
+            <div class="product product4">
+                <div class="productImage productImage4"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+                <div class="productSummary">Lorem ipsum dolor sit amet consectetur consectetur ipsum....</div>
+            </div>            
+            <div class="product product5">
+                <div class="productImage productImage5"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+                <div class="productSummary">Lorem ipsum dolor sit amet consectetur consectetur ipsum....</div>
+            </div>           
+        </div>       
+        <div class="servicesSection servicesGradient">
+            <div class="service service2">
+                <div class="serviceImage serviceImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+            </div>
+            <div class="service service2">
+                <div class="serviceImage serviceImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+            </div>
+            <div class="service service2">
+                <div class="serviceImage serviceImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+            </div>
+            <div class="service service2">
+                <div class="serviceImage serviceImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+            </div>
+            <div class="service service2">
+                <div class="serviceImage serviceImage1"><i class="fa-brands fa-html5" style="font-size: 100px;"></i></div>
+            </div>           
+        </div>
+        <div class="contactUsForm">
+            <h4 style="text-align: center;"><u>Contact Us Form</u></h4>
+            <form>
+                <!-- FirstName Lastname -->
+            <div class="formsection1">
+                <div class="sectionName">
+                    <label for="fname">FirstName:</label>
+                    <input type="text" name="firstname" id="fname" value="Anush" class="inputStyle">
+                </div>
+
+               <div>
+                    <label for="lname">LastName:</label>
+                    <input type="text" name="lastName" id="lname" value="">
+               </div>
+            </div>
+
+            <!-- Radio + CHeckBox -->
+            <div class="formsection2">
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                  <label for="male">Male</label>
+
+                  <input type="radio" name="gender" id="female" value="female">
+                  <label for="female">Female</label>
+                </div>
+
+                  <div>
+                    <input type="checkbox" name="vehicle1" id="vehicle1" value="bike">
+                   <label for="vehicle1">Bike</label>
+
+                   <input type="checkbox" name="vehicle2" id="vehicle2" value="Scooty">
+                   <label for="vehicle2">Scooty</label>
+
+                   <input type="checkbox" name="vehicle3" id="vehicle3" value="Car">
+                   <label for="vehicle3">Car</label>
+
+                   <input type="checkbox" name="vehicle4" id="vehicle4" value="Boat">
+                   <label for="vehicle4">Boat</label>
+                  </div>
+                  
+            </div>
+
+            <div>
+                <textarea rows="9" cols="24" style="width:97%;margin:1%"></textarea>
+              </div>
+        </form>
+
+        </div>
+        <div class="footer">
+            <div>Designed by FSD-WD-E-B20</div>
+            <div>
+                <a href="https://github.com/poonamChauhan229" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-stack-overflow"></i> 
+                <i class="fa-brands fa-linkedin" style="color:#0077B5"></i>               
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-yahoo"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram" style="color:blueviolet"></i>
+                <i class="fa-brands fa-youtube" style="color: red;"></i>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

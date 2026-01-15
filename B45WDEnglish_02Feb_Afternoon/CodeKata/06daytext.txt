@@ -1,0 +1,82 @@
+HCF:
+var arr=userInput[0].split(" ").sort()
+ 
+let result=0;
+for(var i=1;i<=arr[0];i++){
+ if(arr[0]%i==0 && arr[1]%i==0){
+     result=i;
+ }
+}
+console.log(result)
+
+
+console.log(...userInput[0])
+console.log(userInput[0].split("").join(" "))
+
+// spread operator
+
+console.log(...userInput[0])
+
+
+// spread operator
+
+console.log(...userInput[0].split(""))
+
+var arr=[1,2,3]
+//console.log(...arr)
+
+var arr1=123
+//console.log(...arr1)
+
+Math.round(2.1)
+2
+Math.round(2.5)
+3
+Math.round(2.9)
+3
+Math.round(2.4)
+2
+Math.round(2.7)
+3
+
+
+you are given with array of numbers.you have to find whether array is beautiful or not. A beautiful array is an array whose sum of all numbers is divisible by 2, 3 and 5
+
+Input Description:
+You are given a number ‘n’ denoting the size of array.Next line contains n space separated numbers.
+
+Output Description:
+Print 1 if array is beautiful and 0 if it is not
+
+Sample Input :
+5
+5 25 35 -5 30
+Sample Output :
+1
+
+
+A person saves his monthly saving according to given schema. He saves same amount of money which is equal to the money saved in immediate previous two months. Assume, initially he saved 1000 rupees and in first month he saved another 1000. Your task is to tell how much he had totally saved at the end of ‘n’ months
+
+Input Description:
+You will be given a number ‘n’->No. of months
+
+Output Description:
+Print the total savings at the end of ‘n’ months
+
+Sample Input :
+1
+Sample Output :
+2000
+
+var saving=1000;
+var everymonth=1000;
+var amount=0;
+
+// n no of months 1 to n
+for(var i=1;i<=userInput[0];i++){
+    amount=amount+everymonth*i
+    // 0+1000
+    //1000+1000*2=>3000
+    //3000+1000*3=>6000
+}
+console.log(amount+saving)//6000+1000=>7000

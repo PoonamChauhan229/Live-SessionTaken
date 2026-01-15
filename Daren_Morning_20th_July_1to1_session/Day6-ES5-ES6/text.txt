@@ -1,0 +1,29 @@
+***var vs let vs const
+***block scoping
+spread and rest operator
+array and object destructuring
+Object property shorthand
+Template literals
+***Arrow functions
+
+spread operator:
+Syntax=>(...)
+Spread operator expands an array/string into its elemnets
+arr=[1,2,3,4,5]
+1 2 3 4 5
+
+rest parameter:
+...
+allows function to accept an n no of arguments as an array
+last parameter can be prefixed with "..."
+
+function sum(x,y,...num){
+
+}
+
+Destructuring
+Unpackaging of array and objects
+Differnet from Spread operator
+We can apply destructing on array and objects
+
+React=>Function components=>hooks

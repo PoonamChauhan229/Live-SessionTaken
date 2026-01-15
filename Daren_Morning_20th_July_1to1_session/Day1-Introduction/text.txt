@@ -1,0 +1,12 @@
+Module 1
+Introduction to JS
+
+Module 2
+HTML CSS Bootstrap
+
+Module3:
+DOM Manipultaion
+
+Module 4:
+Async, Await, callback, promises
+Asynchronous

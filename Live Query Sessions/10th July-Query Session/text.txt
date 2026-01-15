@@ -1,0 +1,36 @@
+1-Sivilya
+=> HTML and CSS
+=> Display Properties
+    Display:
+    inline
+    block
+    inline-block
+    ======
+    none
+    grid
+    flex
+
+
+
+2-Anil=> Javascript
+=> async and await
+=> explaination of Promise
+=> callstack and event loop
+
+//Advance Javascript
+API=> concept
+=> Location=> Google Map=> Google API=> Location Purpose
+=>xml http request is an traditional and outdated 
+
+callback
+promises
+fetch
+async and await
+
+
+
+3-Deepak 
+=>CodeKata => Basics
+
+4-Aman
+=>CodeKata => Arrays

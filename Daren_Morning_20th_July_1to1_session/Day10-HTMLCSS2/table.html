@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border-bottom: 1px solid black;
+            
+        }
+        .tdborder{
+            border-right:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table tag -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Courses</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td class="tdborder">daren</td>
+                <td class="tdborder">daren@gmail.com</td>
+                <td class="tdborder">23</td>
+                <td>Javascript</td>
+            </tr>
+            <tr>
+                <td class="tdborder">Poonam</td>
+                <td class="tdborder">poonam@gmail.com</td>
+                <td class="tdborder">26</td>
+                <td>React</td>         
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">FullName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Daren</td>
+                <td class="tdborder">Gomes</td>
+                <td>daren@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Poonam</td>
+                <td class="tdborder">Chauhan</td>
+                <td>poonam@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

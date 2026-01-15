@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test"></div>
+    <script>
+        var a = 0
+        var id = setInterval(anim, 1000)
+        function anim() {
+            a = a + 10;
+            if (a == 200) {
+                // stop animation
+                clearInterval(id)
+            }
+            else {
+                //continue the animation
+                var divMove = document.getElementById('test')
+                divMove.style.marginLeft = a + "px"
+                console.log(a)
+            }
+
+        }
+        // Print Happy Birthday in console as well in browser using setinterval and setTimeout
+    </script>
+</body>
+
+</html>

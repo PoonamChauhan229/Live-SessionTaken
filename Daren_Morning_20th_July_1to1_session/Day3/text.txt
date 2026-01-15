@@ -1,0 +1,281 @@
+Copy by Value=>Primitive Datatypes
+Copy by Reference=>Composite datatypes
+Array and JSON iterations
+Window and Document Object
+Documentation:
+Yesterday Task:We will be doing it 
+
+Primitive Datatypes(String, Number, boolean)and composite datatypes(Arrays and Objects)
+
+Copy by Value:
+Primitive datatypes are done by call by Value
+It passes copy of Value
+No modification in the orginial Value
+eg: even if a value is changed, b doesnt have any impact of it
+
+var a=20;
+var b=a;
+a=30;
+console.log(a,b)
+
+Copy by Reference:
+Composite datatypes are involved in call by Reference
+Saves the memory
+If changes done, modification will be done in that original array/object
+
+var arr1=[1,2,4]
+var arr2=arr1
+arr1[1]="JavaScript"
+console.log(arr1)
+
+Array and JSON iterations
+
+Iterations:
+For loop>>For loop takes initialization; condition; increment/decrement
+increment=>i++=>1+1=>2+1=>3
+decrement=>i--=>1-1=>0-1=>-1||5-1=>4-1=>3
+for(initialization; condition; increment/decrement){
+    //code to execute
+}
+
+Print 1 to n(5)
+1
+2
+3
+4
+5
+..................n
+condition
+1.i<6
+2.i<=5
+
+loop doesnt terminate unlessa nd until the condition satisfies
+
+for(var i=1;i<=5;i++){
+//code to execute
+console.log(i)
+}
+
+i=1=>i=1
+i=2=>i=2
+i=3=>1=3
+i=4=>i=4
+i=5=>i=5
+i=6=>XXXXXXXX terminate the loop at that particluar point
+1
+2
+3
+4
+5
+
+Another way:
+for(var i=1;i<6;i++){
+//code to execute
+console.log(i)
+}
+
+Mulitply by 2:(*)=>Table of 2
+for(var i=1;i<=10;i++){
+//code to execute
+console.log(i*2)
+}
+
+Table of 3
+for(var i=1;i<=10;i++){
+//code to execute
+console.log(i*3)
+}
+
+Try out this=>Table of 4 
+
+for(var i=1; i<=10; i++){    
+    console.log(i*4);    
+}
+
+Print some pattern(star patterns)
+*===========>i=1,j=1
+**==========>i=2,j=2
+***=========>i=3,j=3
+****========>i=4,j=4
+*****=======>i=5,j=5
+rows=>5=====>i
+cols=>5=====>j
+n=5;
+//rows
+i=2
+i=3
+for(var i=1; i<=n; i++){    
+    for(var j=1;j<=i;j++){
+
+    }    
+}
+
+
+var n=5
+var string="";
+for(var i=1; i<=n; i++){    
+    for(var j=1;j<=i;j++){
+      string+="*"
+    }
+    string+="\n"
+}
+console.log(string)
+
+Solve this problem
+*****
+*****
+*****
+*****
+
+o/p:
+
+var string = "";
+for(var i=1; i<=5; i++){
+    for(var j = 1; j<=5; j++){
+       string+= ("*");
+      }  
+      console.log(string);
+      string = "";
+}
+
+
+forEach=>function as parameter
+var arr5=[1,6,90]
+arr5.forEach((element)=>{
+    console.log(element)
+})
+
+var arr5=[1,6,90]
+arr5.forEach((element)=>{
+    console.log(element*2)
+})
+
+JSON:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+https://restcountries.com/v3.1/all
+
+JavaScript Object Notation
+Representation of data
+key:value
+object:
+{
+    key:"value"
+}
+json:
+{
+    "key":"value"
+}
+
+Json: Array of objects
+
+[{},{},{}]
+
+var jsonData=[{
+    "name":"abc",
+    "lname":"xyz"
+},
+{
+   "name":"pqr",
+    "lname":"lkj" 
+}]
+
+//iterations:
+
+for(var i=0;i<jsonData.length;i++){
+    console.log(jsonData[i].name,jsonData[i].lname )
+}
+for in=>key =>index no (for loop it is the "i")
+for(var key in jsonData){
+    console.log(key)
+}
+//value
+for(var key in jsonData){
+    console.log(jsonData[key].name)
+}
+
+
+for of=>obj=>entire object
+
+for(var obj of jsonData){
+    console.log(obj)
+}
+
+for(var obj of jsonData){
+    console.log(obj.name)
+}
+
+
+Window and Document Object
+
+Document:
+represents the entire Webpage 
+document.propertyname
+document.getElementById()
+
+Window
+console.log()
+
+window.property_name
+window.console.log()
+
+More Detail:https://www.geeksforgeeks.org/differences-between-document-and-window-objects/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

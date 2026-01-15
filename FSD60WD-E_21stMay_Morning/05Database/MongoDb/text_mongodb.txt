@@ -1,0 +1,374 @@
+mongosh  >> Start ur mongodb server
+
+show dbs 
+local
+admin
+config
+System Db , we wont be touching this , its not for us.
+
+fsd60db  >> create db with dbname - fsd60db
+use dbName
+use fsd60db
+
+MONGODB : NO SQL Db
+        : Collections
+
+Create DB >> atleast 1 Collections
+db.createCollection('CollectionName')
+db.createCollection('test')
+
+show dbs
+
+created Collections
+
+show Collections
+test
+test1
+test2
+
+
+CRUD 
+C CREATE  >>insertOne() || insertMany
+R READ    >>findOne()
+U UPDATE
+D DELETE
+
+DOCUMENT
+INSERT :
+insertOne:
+db.collectionName.insertOne({key1:value1,key2:value2......,keyn:valuen})
+
+name age email 
+
+db.users.insertOne({name:"Pradeep",age:20,email:"pradeep@gmail.com"})
+db.users.insertOne({name:"Chandan",age:21,email:"chandan@gmail.com"})
+db.users.insertOne({name:"Poonam",age:23,email:"poonam@gmail.com"})
+db.users.insertOne({name:"GuviGeek",age:10,email:"guvigeek@gmail.com"})
+
+insertMany:
+db.collectionName.insertMany([
+    {key1:value1,key2:value2......,keyn:valuen},
+    {key1:value1,key2:value2......,keyn:valuen},
+    {key1:value1,key2:value2......,keyn:valuen},
+    {key1:value1,key2:value2......,keyn:valuen},
+    {key1:value1,key2:value2......,keyn:valuen},
+    {key1:value1,key2:value2......,keyn:valuen}
+    ...
+    ...
+    ...
+    {keyn`:valuen1,keyn2:valuen2......,keyn3:valuen3}
+])
+
+db.users.insertMany([
+    {name:"Akash",age:23,email:"akash@gmail.com"},
+    {name:"Hrushikesh",age:24,email:"hrushikesh@gmail.com"},
+    {name:"Sai",age:24,email:"sai@gmail.com"},
+    {name:"Vidya",age:24,email:"vidya@gmail.com"},
+    {name:"Jaswanth",age:24,email:"jaswanth@gmail.com"},
+    {name:"Preethi",age:24,email:"preethi@gmail.com"},
+])
+
+READ >>RETREIVE THE DATA
+
+findOne()
+find()
+db.collectionName.find({},{})
+DISPLAY ALL USERS
+>> SQL >> SELECT * FROM USERS
+>> MONGODB >> db.users.find({},{})
+
+db.collectionName.find({where clause||constraints||conditions},{selections of feildname})
+db.users.find({},{})
+
+_id: 1 /0 ||  1 select 0 dont select 
+DISPLAY NAME ,ID OF THE USERS
+>> SQL >> SELECT NAME,_ID FROM USERS
+>> MONGODB >> db.users.find({},{name:1,_id:1})
+
+DISPLAY NAME ,AGE OF THE USERS
+>> SQL >> SELECT NAME,age FROM USERS
+>> MONGODB >> db.users.find({},{name:1,age:1,_id:0})
+
+findOne()
+name:"Chandan"
+db.users.findOne({name:"Chandan"})
+db.users.findOne({name:"Akash"},{age:1,_id:0})
+db.users.findOne({age:24},{name:1,_id:0})
+
+db.users.find({age:24},{name:1,_id:0})
+
+DELETE
+deleteOne({})
+deleteMany({})
+
+db.collectionName.deleteOne({})
+db.users.deleteOne({age:24})
+db.users.find({},{name:1,age:1,_id:0})
+
+
+db.users.deleteMany({age:24})
+db.users.find({},{name:1,age:1,_id:0})
+
+//delete the user where there is sai@gmail.com
+db.users.deleteOne({email:"sai@gmail.com"})
+
+update:
+  {
+    _id: ObjectId('66a74055b13f4fe4ef16c9c2'),
+    name: 'Vidya',
+    age: 24,
+    email: 'vidya@gmail.com'
+  },
+  //MongodbName
+
+updateOne
+db.users.updateOne({ email: 'vidya@gmail.com'},{$set:{name:"MongodbName"}})
+
+updateMany
+// Akash > age :55
+db.users.updateMany({name:"Akash"},{$set:{age:55}})
+
+
+comparision query operators
+$eq:
+$ne:
+
+$gt:
+$gte:
+
+$lt:
+$lte:
+
+$in:
+$nin:
+
+NOT: 1 condition
+age: 28
+db.users.find({age:{$not:{$eq:28}}})
+
+logical query operators
+$and
+$or
+$nor
+
+Users Collections
+db.users.find({name:{$eq:"John"}})
+db.users.find({name:{$eq:"Alice"}})
+db.users.find({age:{$eq:24}})
+
+Sales Collections >item ,price,size,qunatity,date
+db.sales.find({}) 
+'Cappuccino'
+db.sales.find({item:{$eq:"Cappuccino"}})
+
+//size :"Tall"
+db.sales.find({size:{$eq:"Tall"}})
+
+db.sales.find({size:{$ne:"Tall"}})
+db.orders.find({items:{$ne:"Laptop"}})
+
+$gt:
+$gte:
+
+$lt:
+$lte:
+
+gt : 25 age
+db.users.find({age:{$gt:25}})
+db.users.find({age:{$gte:24}})
+db.users.find({age:{$lt:25}})
+db.users.find({age:{$lte:24}})
+
+Task:
+order:
+orderAmount  :200
+all 4 
+
+price products
+sales price 
+
+Tall Short
+$in:["Tall","Short"]
+db.sales.find({size:{$in:["Tall","Short"]}})
+db.sales.find({item:{$in:["Americanos","Lattes"]}})
+db.sales.find({item:{$nin:["Americanos","Lattes"]}})
+
+//users
+age >28,34,42
+db.users.find({age:{$in:[28,34,42]}})
+
+name >"GuviGeek",bob
+db.users.find({name:{$in:["Bob","guvigeek"]}})
+
+users:
+and : all conditions should match
+
+name:"John" 
+age:28
+$and:[{name:"John"},{age:28}]
+db.users.find({$and:[{name:"John"},{age:28}]})
+
+name : John
+age : $gt 25
+
+$and:[{name:"John"},{age:{$gt:25}}]
+db.users.find({$and:[{name:"John"},{age:{$gt:25}}]})
+
+sales collection:
+item:Americanos
+price:5
+
+$and:[{item:"Americanos"},{price:5}]
+db.sales.find({$and:[{item:"Americanos"},{price:5}]})
+
+
+price gt 5
+quantity lt 30
+
+$and:[{price:{$gt:5}},{quantity:{$lt:30}}]
+db.sales.find({$and:[{price:{$gt:5}},{quantity:{$lt:30}}]})
+_______________________________________________
+// OR:atleast 1 conditions
+db.users.find({$or:[{name:"John"},{age:25}]})
+
+products
+name:xPhone
+price:899
+
+$or:[{name:"xPhone"},{price:899}]
+db.products.find({$or:[{name:"xPhone"},{price:899}]})
+
+//orders collection
+name SmartTablet
+price:899
+_______________________________________________
+
+nor: none of the conditions
+db.users.find({$nor:[{name:"John"},{age:25}]})
+
+age :gt 30
+name :Eve
+$nor:[{age:{$gt:30}},{name:"Eve"}]
+db.users.find({$nor:[{age:{$gt:30}},{name:"Eve"}]})
+
+//orders collection
+name SmartTablet
+price:899
+
+Aggregate Functions:
+Aggregation Pipeline
+====
+$match
+$project
+$group  > sum min max avg
+$sort 1/-1
+$skip
+
+age:10
+db.users.find({age:10})
+
+db.users.aggregate([
+  {$match:{age:10}}
+])
+
+age gt 10
+project name
+db.users.aggregate([
+  {$match:{age:{$gt:10}}},
+  {$project:{_id:0,name:1,age:1}}
+])
+
+$gt 20
+
+$group:
+
+// total age: sum > $sum
+db.users.aggregate([
+  {$group:{
+    _id:null,
+    totalAge:{$sum:"$age"}
+  }}
+])
+db.users.aggregate([
+  {$group:{
+    _id:null,
+    totalAverage:{$avg:"$age"}
+  }}
+])
+//sales: totalPrice
+// totalPrice
+
+db.sales.aggregate([
+  {$group:{
+    _id:"$item",
+    totalPrice:{$sum:"$price"}
+  }}
+])
+
+//products
+price $gt 800
+// group
+
+db.products.aggregate([
+  {$match:{price:{$gt:800}}},
+  {$group:{
+    _id:"$name",
+    totalPrice:{$sum:"$price"}
+  }}
+])
+
+//gte:100
+//group > items > sum
+
+db.sales.aggregate([
+  {$match:{price:{$gte:10}}},
+  {$group:{
+    _id:"$item",
+    totalSum:{$sum:"$price"}
+  }},
+  {$skip:1},
+  {$limit:2}
+])
+
+db.sales.aggregate([
+  {$match:{price:{$gte:10}}},
+  {$group:{
+    _id:"$item",
+    totalSum:{$sum:"$price"},
+  }},
+  {$sort:{totalSum:1}},
+  {$skip:1},
+  {$limit:2}
+ ])
+
+ db.sales.aggregate([
+ {$sort:{item:1}}
+ ])
+
+ db.sales.aggregate([
+  {$match:{price:{$gte:10}}},
+  {$group:{
+    _id:"$item",
+    totalSum:{$sum:"$price"},
+    totalAvg:{$avg:"$price"},
+    minPrice:{$min:"$price"},
+    maxPrice:{$max:"$price"},
+    totalCount:{$sum:1}
+  }}
+ ])
+
+db.sales.aggregate([
+  {$group:{
+    _id:"$item",
+    totalCount:{$sum:1}
+  }}
+])
+
+
+db.sales.aggregate([
+  {$group:{
+    _id:null,
+    totalCount:{$sum:1}
+  }}
+])
+

@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:"black"
+}
+
+.moviePoster{
+    height:200px;
+    width:300px;
+    border:1px solid black;
+}
+.movieContainer{
+    border:1px solid black;
+    width:300px;
+    margin-bottom: 1%;
+    height: 285px;
+    
+}
+.movieSpecs{
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid black; */
+}
+/* .summary{
+    font-size: 13.5px;
+} */
+.movieDisplay{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    width:98%;
+    margin:1% auto;
+}
+/* .rating{
+    color:green
+} */
+
+
+.btnLikeDisLike{
+    /* border: 1px solid red; */
+    text-align: center;
+    display: flex;
+    margin-top: 1%;
+}
+button{
+    padding: 4px 12px;
+    margin-right: 4%;
+    font-size: 16px;
+    background-color:transparent;
+    border:none;
+    position:relative
+}
+span{
+    font-size: 17px; 
+    position: absolute;
+    bottom:11px;
+    /* right:1px; */
+    /* border:1px solid red; */
+    border-radius: 50%;
+    padding: 3px;
+    height: 15px;
+    width:15px;
+    font-weight: bold;
+   
+}
+.like{
+    color: green;
+    background-color: chocolate;
+   
+}
+.dislike{
+    color: red;
+    background-color: cornflowerblue;
+}

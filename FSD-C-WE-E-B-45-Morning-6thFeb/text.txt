@@ -1,0 +1,188 @@
+js
+filename.js
+
+day1.js
+index.js
+script.js
+varaible.js
+
+
+declare a varaible
+var  >> concerns 
+later ES6
+let 
+const
+
+a=5
+var a=5
+var name="Poonam"
+var age=25
+
+Datatypes :
+define a value which you been assigned
+var a=5  --- 5 number
+var a=70.67 ----70.67 decimal number
+Check >> Datatypes >> typeOf()
+
+Primitive Datatypes >> store a single value
+-Number 
+-String
+-Boolean
+
+Composite Datatypes >>collection /complex data/ multiple
+Array:
+Reprsent [] >> [collection of data --- any datatype]
+["Hello World",24,true,"I am a programmer"]
+collection of hetrogenous datatype
+index >>0 1 2 3 4 5
+
+["Hello World",24,true,"I am a programmer",["yes","no],"React,JS,Node"]
+Object
+Trivial Datatypes
+null 
+undefined
+
+
+OPertors
+Arithmetical >>+ - * ** / %
+
+28/02/26
+
+
+Hoisting
+scope types
+Function > Types Declaring/calling functions, parameters, 
+
+
+3 keywords 
+  >> var let const
+  >> var >> JS introduced >> Year -1995 & Person Bradon Eich >> CEO - Mozilla || Netscape
+
+// keywords to declare a varaible and assign the values
+// var   >> declare ,assign,redeclare & reassign  ||declare ,assign- 2lines
+// let   >> declare ,assign & reassign  ||declare ,assign- 2lines
+// const >> declare ,assign ||declare ,assign- 1lines
+
+
+Hoisting :
+When u can access the to top of scope
+
+
+1st Mar 2026
+Array & Array Methods
+JSON Iteration
+Objects
+
+
+Array & Array Methods
+
+Array:
+[]
+index start >>0   >>6
+length count >>1  >>7
+hetrogenous Datatypes >> [],{},"",bool,number
+collection of data
+
+Methods  & Property
+()       || without ()
+
+         || arr.length
+
+Array Methods
+
+common used array Methods
+
+map
+reduce
+filter
+
+
+
+map
+transform ur array 
+arr=[1,2,3,4] >> [2,3,4,5] (added each elemnt by) >>[4,6,8,10] (multilpied by 2)
+arr.map()
+
+
+
+//Arrow Functions :
+shorter simpler functions
+
+function add(){
+  // bloskc of code
+}
+
+//annoymous function >> no name & function keyoword & no flower braces
+let add=()=>console.log(2+2)
+//single line >> no return 
+
+let sum=()=>4
+console.log(sum)
+
+let total=()=>{
+  a=20
+  b=40
+  console.log(a+b)
+  return a+b
+}
+
+
+JSON Iteration
+
+JAVACRIPT OBJECT NOTATION
+{
+  "STUNAME":"youRNAME",
+  "STUAGE":"age"
+}
+
+//comm with server
+// server lang String
+//obj array
+//String
+//objects // array // array of objects
+
+//json >> convert to string || json to object
+//
+
+
+HTML
+hyptext markup langugaes
+
+bulid a structure :
+skeleton >> web devlopment
+doesnt throw errors
+
+
+
+filename.html
+outline
+
+
+HTML Document Structure
+HTML Forms
+Common HTML Elements
+Semantic HTML
+
+version html
+<html>
+    <head></head> // additional info >> not 
+    <body></body> // visible 
+</html>
+
+
+heading tags:
+h1
+h2
+h3
+h4
+h5
+h6
+
+opening tag and closing tag
+<tag></tag>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>

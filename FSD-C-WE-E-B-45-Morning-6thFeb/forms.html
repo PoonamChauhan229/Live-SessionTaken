@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form>
+        <!-- name=value submit  -->
+        <label for="uName">UserName:</label>
+        <input type="text" name="userName" id="uName" value="">
+        <br/><br/>
+        <input type="password" name="pass" id="" placeholder="Enter Password">
+        <br/><br/>
+        <!-- radio button mcqs selection only 1 -->
+         <!-- binding(for & id) +group(name ) -->
+
+        <input type="radio" name="gender" id="fMale" value="female">
+        <label for="fMale">Female</label>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <br>
+        <br>
+
+        <!-- checkboxes >> multiple selection -->
+        <input type="checkbox" name="hobie1" id="dance" value="dancing">
+        <label for="dance">Dancing</label>
+
+        <input type="checkbox" name="hobie2" id="read" value="reading">
+        <label for="read">Reading</label>
+
+        <input type="checkbox" name="hobie3" id="code" value="coding">
+        <label for="code">Coding</label>
+
+        <input type="checkbox" name="hobie4" id="ride" value="riding">
+        <label for="ride">Riding</label>
+
+
+
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

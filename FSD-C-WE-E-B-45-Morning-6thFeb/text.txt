@@ -186,3 +186,58 @@ opening tag and closing tag
 <h4></h4>
 <h5></h5>
 <h6></h6>
+
+
+CSS:
+Cascading Style Sheet
+
+Style:
+Boys do styling  >>clothing,hair , shoes ,watches
+Girls do styling >>clothing,hair+makeup,sandals,accessoroes ...
+
+We want look to good & appreciated & appealing.
+
+CSS >> Structure >> Using CSS 
+Look Good & apprrciated 
+
+CSS dependant  >> Structure >>HTML
+HTML & CSS 
+
+
+CSS>>
+
+3 common ways
+inline css                 >> within the same line >>same element >>h1 >> to this tag
+
+internal css               >> below the head tag >> style tag >> applicable to page
+
+external css               >> seperate file >> link it up >> applicable to all pages wherever u link
+
+
+selector{
+  property:value
+}
+
+selector >> tag, id , class
+
+tag selector << h1 , p , img
+internal & external
+h1{
+  color:red
+}
+inline
+style="color:red"
+
+id = idName
+class= className
+
+id >> unique used for only for 1
+class >>multiple 
+
+
+BOX MODEL:
+Each Element has a box MODEL
+
+
+REACT + HTML +CSS
+

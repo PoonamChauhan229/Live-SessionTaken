@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      border: 2px solid red;
+      background-color: rgb(217, 250, 215);
+      height: 200px;
+      width: 250px;
+      display: flex;
+      /* flex-direction: column; */
+      gap: 10px;
+      margin: 5px;
+      flex-wrap: wrap;
+    }
+    .box {
+      border: 3px solid rgb(32, 0, 128);
+      height: 45px;
+      width: 50px;
+      text-align: center;
+      font-size: 45px;
+      /* margin-right: 10px; */
+    }
+    .container1 {
+      /* right to left */
+      justify-content: center;
+      /* top to bottom */
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    .container2 {
+      justify-content: space-between;
+      align-content: end;
+      flex-wrap: wrap;
+    }
+    .container3 {
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap;
+    }
+    .container4 {
+      justify-content: space-evenly;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      
+      
+    </div>
+
+    <div class="container container1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <div class="container container2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="container container3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="container container4">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
